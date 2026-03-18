@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="107">
+
+    <author>LimnedMoonlight</author>
+    <version>1.0.0.5</version>
+
+    <multiplayer supported="true"/>
+    <iconFilename>modIcon.dds</iconFilename>
+
+    <title>
+        <en>Memory-Optimization</en>
+        <fr>Memory-Optimization</fr>
+        <de>Memory-Optimization</de>
+    </title>
+
+    <description>
+<en><![CDATA[Eliminate micro-stutters and improve your game's stability.
+Memory-Optimization manages the Engine-internal memory (Lua Garbage Collection) in the background to prevent performance drops during long sessions.
+
+Github-Link: https://github.com/LimnedMoon/FS25_RAMSweeper
+
+Features:
+- Automated memory cleanup in fixed intervals
+- Prevents Memory-Bloat in mod-heavy savegames
+- Engine-friendly and lightweight implementation
+- Optimized for maximum FPS stability
+]]></en>
+
+<fr><![CDATA[Eliminez les micro-saccades et ameliorez la stabilite de votre jeu.
+Memory-Optimization gere la memoire interne du moteur (collecte des dechets Lua) en arriere-plan afin d'eviter les baisses de performances lors de longues sessions.
+
+Github-Link: https://github.com/LimnedMoon/FS25_RAMSweeper
+
+Caracteristiques:
+- Nettoyage automatique de la memoire a intervalles reguliers
+- Empeche la surcharge de memoire dans les sauvegardes contenant de nombreux mods
+- Implementation legere et compatible avec le moteur
+- Optimise pour une stabilite maximale du FPS
+]]></fr>
+
+<de><![CDATA[Eliminiert Mikroruckler und verbessert die Stabilität des Spiels.
+Memory-Optimization verwaltet den Engine-internen Speicher (Lua Garbage Collection) im Hintergrund, um Performanceeinbußen bei langen Spielsessions zu verhindern.
+
+Github-Link: https://github.com/LimnedMoon/FS25_RAMSweeper
+
+Features:
+- Automatisierte Speicherbereinigung in festen Intervallen
+- Verhindert Memory-Bloat in mod-intensiven Spielständen
+- Optimiert für maximale FPS-Stabilität
+]]></de>
+    </description>
+
+    <extraSourceFiles>
+        <sourceFile filename="src/memoryOptimizer.lua" />
+    </extraSourceFiles>
+
+</modDesc>
