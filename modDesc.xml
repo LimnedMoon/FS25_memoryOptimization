@@ -51,7 +51,7 @@ Features:
     </description>
 
     <extraSourceFiles>
-        <sourceFile filename="src/memoryOptimizer.lua" />
+        <sourceFile filename="src/memoryOptimization.lua" />
     </extraSourceFiles>
 
 </modDesc>
