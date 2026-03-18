@@ -29,7 +29,7 @@ function memoryOptimization:update(dt)
         local ramAfter = collectgarbage("count")
         local cleaned = ramBefore - ramAfter
         
-        if dbg then Logging.warning(string.format("[memoryOptimization] Gründliche 12-Min-Bereinigung: %.2f KB freigegeben | Aktueller RAM verfügbar: %.2f KB", cleaned, ramAfter)) end
+        if dbg then Logging.warning(string.format("[FS25_memoryOptimization] Gründliche 12-Min-Bereinigung: %.2f KB freigegeben | Aktueller RAM verfügbar: %.2f KB", cleaned, ramAfter)) end
         
         timer = 0
         nextMedium = MEDIUM_INTERVAL -- Reset für die 3-Minuten-Schwellen
@@ -43,13 +43,13 @@ function memoryOptimization:update(dt)
         local ramAfter = collectgarbage("count")
         local cleaned = ramBefore - ramAfter
         
-        if dbg then Logging.warning(string.format("[memoryOptimization] 3-Min-Zwischenbereinigung: %.2f KB freigegeben | Aktueller RAMverfügbar: %.2f KB", cleaned, ramAfter)) end
+        if dbg then Logging.warning(string.format("[FS25_memoryOptimization] 3-Min-Zwischenbereinigung: %.2f KB freigegeben | Aktueller RAM verfügbar: %.2f KB", cleaned, ramAfter)) end
         nextMedium = nextMedium + MEDIUM_INTERVAL -- Schwellenwert um 3 Min erhöhen
     end
 end
 
 function memoryOptimization:loadMap(name)
-    Logging.warning("[memoryOptimization] Mod aktiv - Intervalle: 3 Min / 12 Min")
+    Logging.warning("[FS25_memoryOptimization] Mod aktiv - Intervalle: 3 Min / 12 Min")
     timer = 0
     nextMedium = MEDIUM_INTERVAL
 end
