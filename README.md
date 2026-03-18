@@ -4,7 +4,7 @@
 Eliminate micro-stutters and improve your game's stability.
 Memory-Optimization manages the Engine-internal memory (Lua Garbage Collection) in the background to prevent performance drops during long sessions.
 
-Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimizer
+Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimization
 
 Features:
 - Automated memory cleanup in fixed intervals
@@ -18,7 +18,7 @@ Features:
 Eliminiert Mikroruckler und verbessert die Stabilität des Spiels.
 Memory-Optimization verwaltet den Engine-internen Speicher (Lua Garbage Collection) im Hintergrund, um Performanceeinbußen bei langen Spielsessions zu verhindern.
 
-Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimizer
+Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimization
 
 Features:
 - Automatisierte Speicherbereinigung in festen Intervallen
