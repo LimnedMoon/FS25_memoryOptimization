@@ -23,6 +23,9 @@ Features:
 - Prevents Memory-Bloat in mod-heavy savegames
 - Engine-friendly and lightweight implementation
 - Optimized for maximum FPS stability
+
+Changelog:
+1.0.0.5 - changed Intervalls to 3 / 12 Minutes
 ]]></en>
 
 <fr><![CDATA[Elimine les micro-saccades et ameliore la stabilite du jeu.
@@ -35,6 +38,9 @@ Caracteristiques:
 - Empeche la surcharge de memoire dans les sauvegardes contenant de nombreux mods
 - Implementation legere et compatible avec le moteur
 - Optimise pour une stabilite maximale du FPS
+
+Journal des modifications :
+1.0.0.5 - Modification de la duree des intervalles a 3 / 12 minutes
 ]]></fr>
 
 <de><![CDATA[Eliminiert Mikroruckler und verbessert die Stabilität des Spiels.
@@ -46,6 +52,9 @@ Features:
 - Automatisierte Speicherbereinigung in festen Intervallen
 - Verhindert Memory-Bloat in mod-intensiven Spielständen
 - Optimiert für maximale FPS-Stabilität
+
+Changelog:
+1.0.0.5 - Intervalle geändert zu 3 / 12 Minuten
 ]]></de>
     </description>
 
