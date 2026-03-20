@@ -4,13 +4,19 @@
 Eliminate micro-stutters and improve your game's stability.
 Memory-Optimization manages the Engine-internal memory (Lua Garbage Collection) in the background to prevent performance drops during long sessions.
 
-Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimization
-
 Features:
 - Automated memory cleanup in fixed intervals
 - Prevents Memory-Bloat in mod-heavy savegames
 - Engine-friendly and lightweight implementation
-- Optimized for maximum FPS stability
+- Optimized for FPS stability
+
+Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimization
+
+# Changelog Version 1.0.0.2:
+- changed to one Intervall every 5 Minutes.
+
+# Changelog Version 1.0.0.1:
+- Changed the Print-Logging from Warning to Information
 
 ---
 
@@ -18,9 +24,15 @@ Features:
 Eliminiert Mikroruckler und verbessert die Stabilität des Spiels.
 Memory-Optimization verwaltet den Engine-internen Speicher (Lua Garbage Collection) im Hintergrund, um Performanceeinbußen bei langen Spielsessions zu verhindern.
 
-Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimization
-
-Features:
+# Features:
 - Automatisierte Speicherbereinigung in festen Intervallen
 - Verhindert Memory-Bloat in mod-intensiven Spielständen
-- Optimiert für maximale FPS-Stabilität
+- Optimiert für FPS-Stabilität
+
+Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimization
+
+# Änderungsprotokoll Version 1.0.0.2:
+- Umstellung auf ein Intervall von 5 Minuten.
+
+# Änderungsprotokoll Version 1.0.0.1:
+- Die Logausgabe wurde von Warning, auf Informationstext geändert.
