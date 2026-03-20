@@ -1,60 +1,69 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="107">
     <author>LimnedMoonlight</author>
-    <version>1.0.0.5</version>
+    <version>1.0.0.2</version>
 
     <multiplayer supported="true"/>
     <iconFilename>modIcon.dds</iconFilename>
 
     <title>
-        <en>Memory-Optimization</en>
-        <fr>Memory-Optimization</fr>
-        <de>Memory-Optimization</de>
+        <en>Memory Optimization</en>
+        <fr>Memory Optimization</fr>
+        <de>Memory Optimization</de>
     </title>
 
     <description>
 <en><![CDATA[Eliminate micro-stutters and improve your game's stability.
-Memory-Optimization manages and clears the Engine-internal memory (Lua Garbage Collection) in the background to prevent performance drops during long sessions.
-
-Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimization
+Memory Optimization manages the Engine-internal memory (Lua Garbage Collection) in the background to prevent performance drops during long sessions.
 
 Features:
 - Automated memory cleanup in fixed intervals
 - Prevents Memory-Bloat in mod-heavy savegames
 - Engine-friendly and lightweight implementation
-- Optimized for maximum FPS stability
+- Optimized for FPS stability
 
-Changelog:
-1.0.0.5 - changed Intervalls to 3 / 12 Minutes
-]]></en>
+Changelog Version 1.0.0.2:
+- changed to one Intervall every 5 Minutes.
 
-<fr><![CDATA[Elimine les micro-saccades et ameliore la stabilite du jeu.
-L'optimisation de la memoire gere et nettoie la memoire interne du moteur (Lua Garbage Collection) en arriere-plan afin d'eviter toute baisse de performances lors de longues sessions de jeu.
+Changelog Version 1.0.0.1:
+- Changed the Print-Logging from Warning to Information
 
 Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimization
+]]></en>
+
+<fr><![CDATA[Eliminez les micro-saccades et ameliorez la stabilite de votre jeu.
+Memory Optimization gere la memoire interne du moteur (collecte des dechets Lua) en arriere-plan afin d'eviter les baisses de performances lors de longues sessions.
 
 Caracteristiques:
 - Nettoyage automatique de la memoire a intervalles reguliers
 - Empeche la surcharge de memoire dans les sauvegardes contenant de nombreux mods
 - Implementation legere et compatible avec le moteur
-- Optimise pour une stabilite maximale du FPS
+- Optimise pour une stabilite du FPS
 
-Journal des modifications :
-1.0.0.5 - Modification de la duree des intervalles a 3 / 12 minutes
+Journal des modifications, version 1.0.0.2 :
+- Modification de la fréquence d'intervalle à une fois toutes les 5 minutes.
+
+Journal des modifications, version 1.0.0.1 :
+- Modification du niveau d'enregistrement des journaux, passant de Avertissement, a Information.
+
+Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimization
 ]]></fr>
 
 <de><![CDATA[Eliminiert Mikroruckler und verbessert die Stabilität des Spiels.
-Memory-Optimization verwaltet und bereinigt den Engine-internen Speicher (Lua Garbage Collection) im Hintergrund, um Performanceeinbußen bei langen Spielsessions zu verhindern.
-
-Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimization
+Memory Optimization verwaltet den Engine-internen Speicher (Lua Garbage Collection) im Hintergrund, um Performanceeinbußen bei langen Spielsessions zu verhindern.
 
 Features:
 - Automatisierte Speicherbereinigung in festen Intervallen
 - Verhindert Memory-Bloat in mod-intensiven Spielständen
-- Optimiert für maximale FPS-Stabilität
+- Optimiert für FPS-Stabilität
 
-Changelog:
-1.0.0.5 - Intervalle geändert zu 3 / 12 Minuten
+Änderungsprotokoll Version 1.0.0.2:
+- Umstellung auf ein Intervall von 5 Minuten.
+
+Änderungsprotokoll Version 1.0.0.1:
+- Die Logausgabe wurde von Warning, auf Informationstext geändert.
+
+Github-Link: https://github.com/LimnedMoon/FS25_memoryOptimization
 ]]></de>
     </description>
 
