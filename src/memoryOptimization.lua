@@ -44,7 +44,7 @@ function memoryOptimization:update(dt)
         local ramAfter = collectgarbage("count")
         local cleaned = ramBefore - ramAfter
         
-        if dbg then Logging.warning(string.format("[FS25_memoryOptimization] 3-Min-Zwischenbereinigung: %.2f KB freigegeben | Aktueller Speicher verfügbar: %.2f KB", cleaned, ramAfter)) end
+        if dbg then print(string.format("[FS25_memoryOptimization] 3-Min-Zwischenbereinigung: %.2f KB freigegeben | Aktueller Speicher verfügbar: %.2f KB", cleaned, ramAfter)) end
         nextMedium = nextMedium + MEDIUM_INTERVAL -- Schwellenwert um 3 Min erhöhen
     end
 end
