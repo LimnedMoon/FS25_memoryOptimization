@@ -12,8 +12,8 @@
 memoryOptimization = {}
 
 local timer = 0
-local MEDIUM_INTERVAL = 180000 -- 3 Minuten in Millisekunden
-local FULL_INTERVAL = 720000   -- 12 Minuten in Millisekunden
+local MEDIUM_INTERVAL = 180000 -- 3 Minutes in Milliseconds
+local FULL_INTERVAL = 720000   -- 12 Minutes in Milliseconds
 local nextMedium = MEDIUM_INTERVAL 
 local dbg = true
 
@@ -23,19 +23,19 @@ function memoryOptimization:update(dt)
     if timer >= FULL_INTERVAL then
         local ramBefore = collectgarbage("count")
         
-        -- Doppelter Durchlauf
+        -- Double Cleanup
         collectgarbage("collect")
         collectgarbage("collect") 
         
         local ramAfter = collectgarbage("count")
         local cleaned = ramBefore - ramAfter
         
-        if dbg then Logging.warning(string.format("[FS25_memoryOptimization] Gründliche 12-Min-Bereinigung: %.2f KB freigegeben | Aktueller Speicher verfügbar: %.2f KB", cleaned, ramAfter)) end
+        if dbg then Logging.warning(string.format("[FS25_memoryOptimization] Thorough 12-minute cleanup: %.2f KB freed | Current available memory: %.2f KB", cleaned, ramAfter)) end
         
         timer = 0
-        nextMedium = MEDIUM_INTERVAL -- Reset für die 3-Minuten-Schwellen
+        nextMedium = MEDIUM_INTERVAL -- Reset for 3-Minute interim
 
-    -- 3-Minuten Routine
+    -- 3-Minute Routine
     elseif timer >= nextMedium then
         local ramBefore = collectgarbage("count")
         
@@ -44,7 +44,7 @@ function memoryOptimization:update(dt)
         local ramAfter = collectgarbage("count")
         local cleaned = ramBefore - ramAfter
         
-        if dbg then print(string.format("[FS25_memoryOptimization] 3-Min-Zwischenbereinigung: %.2f KB freigegeben | Aktueller Speicher verfügbar: %.2f KB", cleaned, ramAfter)) end
+        if dbg then print(string.format("[FS25_memoryOptimization] 3-minute interim cleanup: %.2f KB freed | Current available memory: %.2f KB", cleaned, ramAfter)) end
         nextMedium = nextMedium + MEDIUM_INTERVAL -- Schwellenwert um 3 Min erhöhen
     end
 end
